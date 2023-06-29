@@ -1,18 +1,56 @@
-html {
-  font-size: 14px;
-}
-
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    font-family: Garamond, serif;
 }
+.landing-wallpaper {
+    background-image: url('../IMG/landing-wallpaper.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.landing-title {
+    font-size: 4.5em;
+}
+.landing-p {
+    font-size: 1.5em;
+}
+/* Button Style */
+.landing-btn {
+    display: inline-block;
+    padding: 5px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: 40px;
+    background-color: #100c08;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1.2);
+    transition: background-color 0.3s ease;
+}
+
+    .landing-btn:hover {
+        box-shadow: 0 2px 4px #290e05;
+    }
+
+    .landing-btn:focus {
+        outline: none;
+    }
+
+    .landing-btn:active {
+        transform: translateY(1px);
+    }

@@ -20,7 +20,7 @@ namespace LoginMVCPlusCrud.Controllers
         }
 
         // GET: Blogs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> AllBlogs()
         {
               return _context.Blog != null ? 
                           View(await _context.Blog.ToListAsync()) :
