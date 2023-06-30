@@ -62,7 +62,7 @@ namespace LoginMVCPlusCrud.Controllers
             {
                 _context.Add(blog);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(AllBlogs));
             }
             return View(blog);
         }
@@ -113,7 +113,7 @@ namespace LoginMVCPlusCrud.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(AllBlogs));
             }
             return View(blog);
         }
@@ -152,7 +152,7 @@ namespace LoginMVCPlusCrud.Controllers
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(AllBlogs));
         }
 
         private bool BlogExists(int id)
